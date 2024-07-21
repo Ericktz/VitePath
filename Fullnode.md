@@ -16,12 +16,10 @@ In this tutorial, I'll guide you step-by-step on how to install Ubuntu 20.04 on 
 
 :small_blue_diamond: A personal computer, mini PC, or VPS  
 :small_blue_diamond: Minimum of 4 cores  
-:small_blue_diamond: At least 300GB of storage  
+:small_blue_diamond: At least 300GB of storage (SSD preferred) 
 :small_blue_diamond: A second PC for establishing an SSH session  
 
-### Pay Attention!
-
-**This tutorial will erase all data on the PC or VPS!**
+_**Pay Attention!: This tutorial will erase all data on the PC or VPS!**_
 
 ## How to Install Ubuntu: Part 1 - Getting Started
 
@@ -35,7 +33,7 @@ Depending on your location, there are several options available. For this tutori
 
 1. Visit [Contabo VPS](https://contabo.com/en/vps/). Since we'll use this for our node later, select the VPS S option.
 2. Choose the term length (I recommend a monthly term for flexibility). Select the region closest to your location.
-3. For storage, 200GB shouldn't suffice for a Full Node, you must can afford an extra $1.50, opt for the 400GB package.
+3. For storage, 200GB shouldn't suffice for a Full Node, you must need afford an extra $1.50, opt for the 400GB package.
 4. Select Ubuntu 20.04 as the operating system.
 5. Set a strong password for the root user and keep it secure.
 6. Fill in your details and complete the payment.
@@ -67,64 +65,62 @@ In this part, we'll secure your VPS and change the SSH port.
 1. Open the SSH configuration file with:  
    ```
    sudo nano /etc/ssh/sshd_config 
-3. Find the line:
+2. Find the line:
     ```
-    #Port 22
-4. Change it to:
+    #port 22
+3. Change it to:
     ```
-    Port 2220
-5. Save and close the file by pressing Ctrl + X, then Y, and Enter.
-6. Restart the SSH service with:
+    port 2220
+4. Save and close the file by pressing `Ctrl + X`, then `Y`, and `Enter`.
+5. Restart the SSH service with:
     ```
     sudo systemctl restart sshd
-7. Open a new PuTTY window, enter the IP address and new port, and connect again. Accept the security warning and log in. If successful, you can close the old session.
+6. Open a new PuTTY window, enter the IP address and new port, and connect again. Accept the security warning and log in. If successful, you can close the old session.
 
 ### Step 2: Enabling the Firewall
-Allow necessary ports and enable the firewall with the following commands:
-    ```
-    sudo ufw allow 2220/tcp
-    sudo ufw allow 41420
-    sudo ufw allow 48132
-    sudo ufw enable
-    sudo ufw status
-
-Ensure you can still connect by opening a new PuTTY session. If successful, your VPS is now secure.
+1. Allow necessary ports and enable the firewall with the following commands:
+   ```
+   sudo ufw allow 2220/tcp
+   sudo ufw allow 41420
+   sudo ufw allow 48132
+   sudo ufw enable
+   sudo ufw status
+2. Ensure you can still connect by opening a new PuTTY session. If successful, your VPS is now secure.
 
 ## How to Install Ubuntu: Part 3 - Installing on a PC or Mini PC
-Requirements
-:small_blue_diamond: A PC or mini PC for Ubuntu installation (all data will be erased!)
-:small_blue_diamond: An empty USB stick with at least 8GB of storage (will be wiped)
-:small_blue_diamond: A PC/laptop for following the tutorial and connecting via SSH
+### Requirements
 
-Step 1: Downloading and Preparing the USB Stick
-Download Ubuntu Server from Ubuntu Downloads.
-Select "Manual installation" and click on "Get Ubuntu 20.04 LTS."
-Download Rufus to prepare the USB stick.
-Start Rufus, select your USB device, and the Ubuntu ISO you downloaded. Click "Start" and wait for the process to complete.
-Step 2: Installing Ubuntu
-Reboot the target computer with the USB stick inserted. The installer should start automatically.
-Follow the installation prompts, ensuring to install OpenSSH.
-For detailed instructions, refer to this installation guide.
-Step 3: Enabling the Firewall
-Once Ubuntu is installed, log in with the username and password you set.
+:small_blue_diamond: A PC or mini PC for Ubuntu installation (all data will be erased!)  
+:small_blue_diamond: An empty USB stick with at least 8GB of storage (will be wiped)  
+:small_blue_diamond: A PC/laptop for following the tutorial and connecting via SSH  
 
-Run the following commands to ensure SSH access and enable the firewall:
+### Step 1: Downloading and Preparing the USB Stick
+1. Download Ubuntu Server from [Ubuntu Downloads](https://ubuntu.com/download/server#downloads).
+2. Select "Manual installation" and click on "Get Ubuntu 20.04 LTS."
+3. Download [Rufus](https://rufus.ie/) to prepare the USB stick.
+4. Start Rufus, select your USB device, and the Ubuntu ISO you downloaded. Click "Start" and wait for the process to complete.
+   
+### Step 2: Installing Ubuntu
+1. Reboot the target computer with the USB stick inserted. The installer should start automatically.
+2. Follow the installation prompts, ensuring to install OpenSSH.
+3. For detailed instructions, refer to this [installation guide](https://techguides.yt/guides/how-to-install-ubuntu-server-20-04-lts-from-usb/#3_Install_Ubuntu_Server_2004_LTS).
 
+### Step 3: Enabling the Firewall
+1. Once Ubuntu is installed, log in with the username and password you set.
 
-sudo apt update
-sudo apt upgrade
-ip addr
-Note the IP address from the ip addr command.
-
-From another computer, start PuTTY and connect to this IP address with SSH on port 22. Accept the security alert and log in.
-
-Enable the firewall with:
-
-
-sudo ufw allow 22/tcp
-sudo ufw allow 41420
-sudo ufw allow 48132
-sudo ufw enable
-sudo ufw status
-Test your connection with a new PuTTY session. If successful, your PC is now set up with Ubuntu and secured with a firewall.
+2. Run the following commands to ensure SSH access and enable the firewall:   
+   ```
+   sudo apt update
+   sudo apt upgrade
+   ip addr
+3. Note the IP address from the `ip addr` command.
+4. From another computer, start PuTTY and connect to this IP address with SSH on port 22. Accept the security alert and log in.
+5. Enable the firewall with:
+   ```
+   sudo ufw allow 22/tcp
+   sudo ufw allow 41420
+   sudo ufw allow 48132
+   sudo ufw enable
+   sudo ufw status
+6. Test your connection with a new PuTTY session. If successful, your PC is now set up with Ubuntu and secured with a firewall.
 
