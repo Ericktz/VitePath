@@ -81,7 +81,6 @@ In this part, we'll secure your VPS and change the SSH port.
 
 ### Step 2: Enabling the Firewall
 Allow necessary ports and enable the firewall with the following commands:
-
     ```
     sudo ufw allow 2220/tcp
     sudo ufw allow 41420
