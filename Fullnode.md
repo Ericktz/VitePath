@@ -65,15 +65,17 @@ In this part, we'll secure your VPS and change the SSH port.
 ### Step 1: Change the SSH Port
 
 1. Open the SSH configuration file with:  
-   ```sudo nano /etc/ssh/sshd_config ```
-2. Find the line:
-    ```#Port 22
-3. Change it to:
+   ```
+   sudo nano /etc/ssh/sshd_config 
+3. Find the line:
+    ```
+    #Port 22
+4. Change it to:
     ```Port 2220
-4. Save and close the file by pressing Ctrl + X, then Y, and Enter.
-5. Restart the SSH service with:
+5. Save and close the file by pressing Ctrl + X, then Y, and Enter.
+6. Restart the SSH service with:
     ```sudo systemctl restart sshd
-6. Open a new PuTTY window, enter the IP address and new port, and connect again. Accept the security warning and log in. If successful, you can close the old session.
+7. Open a new PuTTY window, enter the IP address and new port, and connect again. Accept the security warning and log in. If successful, you can close the old session.
 
 Step 2: Enabling the Firewall
 Allow necessary ports and enable the firewall with the following commands:
