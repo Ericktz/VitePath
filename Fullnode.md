@@ -1,4 +1,4 @@
-### Full Node in Vite Network
+# Full Node in Vite Network
 
 In the Vite network, nodes are categorized into Full Nodes and Snapshot Block Producer (SBP) aka Super nodes in the scene. This section introduces the installation of a Full Node.
 
@@ -71,10 +71,12 @@ In this part, we'll secure your VPS and change the SSH port.
     ```
     #Port 22
 4. Change it to:
-    ```Port 2220
+    ```
+    Port 2220
 5. Save and close the file by pressing Ctrl + X, then Y, and Enter.
 6. Restart the SSH service with:
-    ```sudo systemctl restart sshd
+    ```
+    sudo systemctl restart sshd
 7. Open a new PuTTY window, enter the IP address and new port, and connect again. Accept the security warning and log in. If successful, you can close the old session.
 
 Step 2: Enabling the Firewall
