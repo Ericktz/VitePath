@@ -79,18 +79,19 @@ In this part, we'll secure your VPS and change the SSH port.
     sudo systemctl restart sshd
 7. Open a new PuTTY window, enter the IP address and new port, and connect again. Accept the security warning and log in. If successful, you can close the old session.
 
-Step 2: Enabling the Firewall
+### Step 2: Enabling the Firewall
 Allow necessary ports and enable the firewall with the following commands:
 
+    ```
+    sudo ufw allow 2220/tcp
+    sudo ufw allow 41420
+    sudo ufw allow 48132
+    sudo ufw enable
+    sudo ufw status
 
-sudo ufw allow 2220/tcp
-sudo ufw allow 41420
-sudo ufw allow 48132
-sudo ufw enable
-sudo ufw status
 Ensure you can still connect by opening a new PuTTY session. If successful, your VPS is now secure.
 
-How to Install Ubuntu: Part 3 - Installing on a PC or Mini PC
+## How to Install Ubuntu: Part 3 - Installing on a PC or Mini PC
 Requirements
 :small_blue_diamond: A PC or mini PC for Ubuntu installation (all data will be erased!)
 :small_blue_diamond: An empty USB stick with at least 8GB of storage (will be wiped)
