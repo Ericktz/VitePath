@@ -1,4 +1,4 @@
-# Installation Tutorial
+# How to Install Ubuntu Tutorial
 
 In this tutorial, I'll guide you step-by-step on how to install Ubuntu 20.04 on a PC or VPS, and how to connect to it using SSH.
 
@@ -11,7 +11,7 @@ In this tutorial, I'll guide you step-by-step on how to install Ubuntu 20.04 on 
 
 _**Pay Attention!: This tutorial will erase all data on the PC or VPS!**_
 
-## How to Install Ubuntu: Part 1 - Getting Started
+## PART 1 - Getting Started
 
 In this part, I'll explain how to install Ubuntu on a VPS and connect to it using SSH. As a bonus, we'll secure it with a firewall to prevent all ports from being open.
 
@@ -44,7 +44,7 @@ After a few hours, you'll receive an email with connection instructions. This em
 3. Enter the root password and press Enter again.
 4. You should now see the welcome screen, indicating you've successfully logged into your VPS.
 
-## How to Install Ubuntu: Part 2 - Securing Your VPS
+## PART 2 - Securing Your VPS
 
 In this part, we'll secure your VPS and change the SSH port.
 
@@ -77,7 +77,7 @@ In this part, we'll secure your VPS and change the SSH port.
    sudo ufw status
 2. Ensure you can still connect by opening a new PuTTY session. If successful, your VPS is now secure.
 
-## How to Install Ubuntu: Part 3 - Installing on a PC/laptop
+## PART 3 - Installing on a PC/laptop
 ### Requirements
 
 :zap: A PC/laptop for Ubuntu installation (all data will be erased!)  
