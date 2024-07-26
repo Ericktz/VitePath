@@ -24,6 +24,7 @@ Over a full year, SBPs can earn mining rewards worth 30 million VITE (approximat
 
 The said amount of VITE needs to be locked as soon as the SBP is online to make sure that you do not miss out on the daily rewards for creating blocks and votes. The rewards will depend on the rank of your SBP has and the amount of votes it will have.
 
+# SBP INSTALLATION
 ## PART I - Installing the SBP
 This step-by-step guide assumes that you have installed the Full Node according to the tutorial provided in ⁠[FullNode Walkthrough](FullNode_Walkthrough.md) If it is installed in another way, these instructions may not apply to your settings.
 
