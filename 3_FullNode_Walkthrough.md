@@ -8,7 +8,7 @@ Welcome to our comprehensive installation tutorial! In this step-by-step guide, 
 :zap: 2 cores minimum  
 :zap: 4GB RAM  
 :zap: 400GB minimum storage capacity (Ledger currently takes up 220GB)  
-:zap: Clean install of Ubuntu 20.04LTS - [Check here](Ubuntu_Install.md)  
+:zap: Clean install of Ubuntu 20.04LTS - [Check here](2_Ubuntu_Install.md)  
 :zap: A stable internet connection  
 
 ## Other requirements:
@@ -24,7 +24,7 @@ This amount of VITE needs to be locked as soon as the node is fully synced to en
 To start with, make sure that the computer or a virtual private server (VPS) which you will be using has a Secure Shell Protocol (SSH) access and that Ubuntu 20.04 has already been installed in it.
 
 ### Step 1:
-- Log into your computer or VPS with SSH (Logging in with SSH is explained [here](Ubuntu_Install.md))
+- Log into your computer or VPS with SSH (Logging in with SSH is explained [here](2_Ubuntu_Install.md))
 
 ### Step 2: 
 - Download the node software
