@@ -19,7 +19,7 @@ This amount of VITE needs to be locked as soon as the node is fully synced to en
 
 
 # FULL NODE INSTALLATION
-## Part I - Getting started
+## PART I - Getting started
 
 To start with, make sure that the computer or a virtual private server (VPS) which you will be using has a Secure Shell Protocol (SSH) access and that Ubuntu 20.04 has already been installed in it.
 
@@ -53,7 +53,7 @@ To start with, make sure that the computer or a virtual private server (VPS) whi
 
   output of the ls command should show the three mentioned files!
 
-## Part II - Making the node config json file
+## PART II - Making the node config json file
 ```
 nano node_config.json
 ```
@@ -131,7 +131,7 @@ For reference, below is an example of a `node_config.json`.
 
 Save the edited file with `control+X` then `Y`
 
-## Part III - Starting the node for the first time
+## PART III - Starting the node for the first time
 ```
 ./bootstrap
 ```
@@ -150,7 +150,7 @@ Start the Node success!!!
 ```
 
 
-## Part IV - Making the node start when the computer/VPS is booted or restarted
+## PART IV - Making the node start when the computer/VPS is booted or restarted
 
 Start with the following command and write down the output you will need it later:
 ```
@@ -164,7 +164,7 @@ root@vmi691189:~/$ pwd
 /home/root/
 ```
 
-## Part V - Making the install Script
+## PART V - Making the install Script
 
 We are going to make the install script so we can turn it into a service. We are using nano, an easy to use text editor built into ubuntu.
 
@@ -246,7 +246,7 @@ We are going to make the install script so we can turn it into a service. We are
   sudo systemctl enable vite
   ```
 
-## Part VI - Starting the Node
+## PART VI - Starting the Node
 
 Next up is starting the node as a service this requires a few commands the first time.
 
@@ -287,7 +287,7 @@ Next up is starting the node as a service this requires a few commands the first
 - On a low-end hardware, this would take a good two to three weeks work to finish. 
 
 
-## Part VII - Locking VITE for Rewards
+## PART VII - Locking VITE for Rewards
 
 This part of the tutorial will show you how to lock the required amount of VITE and is written with the assumption that you are using VITE Wallet installed on your phone.
 
