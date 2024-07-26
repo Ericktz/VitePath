@@ -4,7 +4,7 @@ In this tutorial, I'll guide you step-by-step on how to install Ubuntu 20.04 on 
 
 ## Requirements
 
-:zap: A personal computer, mini PC, or VPS   
+:zap: A personal computer, laptop or VPS   
 :zap: Minimum of 4 cores   
 :zap: At least 300GB of storage (SSD preferred)   
 :zap: A second PC for establishing an SSH session   
@@ -77,12 +77,12 @@ In this part, we'll secure your VPS and change the SSH port.
    sudo ufw status
 2. Ensure you can still connect by opening a new PuTTY session. If successful, your VPS is now secure.
 
-## How to Install Ubuntu: Part 3 - Installing on a PC or Mini PC
+## How to Install Ubuntu: Part 3 - Installing on a PC/laptop
 ### Requirements
 
-:small_blue_diamond: A PC or mini PC for Ubuntu installation (all data will be erased!)  
-:small_blue_diamond: An empty USB stick with at least 8GB of storage (will be wiped)  
-:small_blue_diamond: A PC/laptop for following the tutorial and connecting via SSH  
+:zap: A PC/laptop for Ubuntu installation (all data will be erased!)  
+:zap: An empty USB stick with at least 8GB of storage (will be wiped)  
+:zap: A PC/laptop for following the tutorial and connecting via SSH  
 
 ### Step 1: Downloading and Preparing the USB Stick
 1. Download Ubuntu Server from [Ubuntu Downloads](https://ubuntu.com/download/server#downloads).
