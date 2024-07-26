@@ -2,10 +2,11 @@
 
 In this tutorial, I'll guide you step-by-step on how to install Ubuntu 20.04 on a PC or VPS, and how to connect to it using SSH.
 
-## Requirements
+## Minimum Hardware Requirements
 
-:zap: A personal computer, laptop or VPS   
-:zap: Minimum of 4 cores   
+:zap: PC, laptop or VPS   
+:zap: 2 cores  
+:zap: 4GB RAM
 :zap: At least 400GB of storage (SSD preferred)   
 :zap: A second PC for establishing an SSH session   
 
@@ -54,17 +55,21 @@ In this part, we'll secure your VPS and change the SSH port.
 
 1. Open the SSH configuration file with:  
    ```
-   sudo nano /etc/ssh/sshd_config 
+   sudo nano /etc/ssh/sshd_config
+   ```
 2. Find the line:
     ```
     #port 22
+    ```
 3. Change it to:
     ```
     port 2220
+    ```
 4. Save and close the file by pressing `Ctrl + X`, then `Y`, and `Enter`.
 5. Restart the SSH service with:
     ```
     sudo systemctl restart sshd
+    ```
 6. Open a new PuTTY window, enter the IP address and new port, and connect again. Accept the security warning and log in. If successful, you can close the old session.
 
 ### Step 2: Enabling the Firewall
@@ -75,6 +80,7 @@ In this part, we'll secure your VPS and change the SSH port.
    sudo ufw allow 48132
    sudo ufw enable
    sudo ufw status
+   ```
 2. Ensure you can still connect by opening a new PuTTY session. If successful, your VPS is now secure.
 
 ## PART 3 - Installing on a PC/laptop
@@ -103,6 +109,7 @@ In this part, we'll secure your VPS and change the SSH port.
    sudo apt update
    sudo apt upgrade
    ip addr
+   ```
 3. Note the IP address from the `ip addr` command.
 4. From another computer, start PuTTY and connect to this IP address with SSH on port 22. Accept the security alert and log in.
 5. Enable the firewall with:
@@ -112,5 +119,6 @@ In this part, we'll secure your VPS and change the SSH port.
    sudo ufw allow 48132
    sudo ufw enable
    sudo ufw status
+   ```
 6. Test your connection with a new PuTTY session. If successful, your PC is now set up with Ubuntu and secured with a firewall.
 
