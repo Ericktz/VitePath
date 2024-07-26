@@ -1,8 +1,8 @@
-## Installation Tutorial
+# Installation Tutorial
 
 In this tutorial, I'll guide you step-by-step on how to install Ubuntu 20.04 on a PC or VPS, and how to connect to it using SSH.
 
-### Requirements
+## Requirements
 
 :zap: A personal computer, mini PC, or VPS   
 :zap: Minimum of 4 cores   
