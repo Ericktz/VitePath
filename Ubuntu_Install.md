@@ -4,10 +4,10 @@ In this tutorial, I'll guide you step-by-step on how to install Ubuntu 20.04 on 
 
 ### Requirements
 
-:small_blue_diamond: A personal computer, mini PC, or VPS  
-:small_blue_diamond: Minimum of 4 cores  
-:small_blue_diamond: At least 300GB of storage (SSD preferred) 
-:small_blue_diamond: A second PC for establishing an SSH session  
+:zap: A personal computer, mini PC, or VPS   
+:zap: Minimum of 4 cores   
+:zap: At least 300GB of storage (SSD preferred)   
+:zap: A second PC for establishing an SSH session   
 
 _**Pay Attention!: This tutorial will erase all data on the PC or VPS!**_
 
