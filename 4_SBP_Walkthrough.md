@@ -15,7 +15,7 @@ Over a full year, SBPs can earn mining rewards worth 30 million VITE (approximat
 :zap: 4 cores minimum  
 :zap: 8GB RAM  
 :zap: 500GB minimum storage capacity (Ledger currently takes up 220GB)  
-:zap: Full node installed with the guide for full node - [Check here](FullNode_Walkthrough.md)  
+:zap: Full node installed with the guide for full node - [Check here](3_FullNode_Walkthrough.md)  
 :zap: A stable internet connection  
 
 ## Other requirements:
@@ -26,10 +26,10 @@ The said amount of VITE needs to be locked as soon as the SBP is online to make 
 
 # SBP INSTALLATION
 ## PART I - Installing the SBP
-This step-by-step guide assumes that you have installed the Full Node according to the tutorial provided in ⁠[FullNode Walkthrough](FullNode_Walkthrough.md) If it is installed in another way, these instructions may not apply to your settings.
+This step-by-step guide assumes that you have installed the Full Node according to the tutorial provided in ⁠[FullNode Walkthrough](3_FullNode_Walkthrough.md) If it is installed in another way, these instructions may not apply to your settings.
 
 ### Step 1: 
-- Start by logging into the Full Node with SSH. A how-to guide can be found [here](Ubuntu_Install.md)
+- Start by logging into the Full Node with SSH. A how-to guide can be found [here](2_Ubuntu_Install.md)
 ### Step 2: 
 - The next thing we need to do is to STOP the Full Node. You can do this by typing the command:
   ```
