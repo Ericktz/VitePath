@@ -24,7 +24,7 @@ Over a full year, SBPs can earn mining rewards worth 30 million VITE (approximat
 
 The said amount of VITE needs to be locked as soon as the SBP is online to make sure that you do not miss out on the daily rewards for creating blocks and votes. The rewards will depend on the rank of your SBP has and the amount of votes it will have.
 
-## Part I - INSTALLING AN SBP
+## PART I - Installing the SBP
 This step-by-step guide assumes that you have installed the Full Node according to the tutorial provided in ⁠[FullNode Walkthrough](FullNode_Walkthrough.md) If it is installed in another way, these instructions may not apply to your settings.
 
 ### Step 1: 
@@ -110,7 +110,7 @@ This step-by-step guide assumes that you have installed the Full Node according 
 
 - After this, you may already close the SSH connection.
 
-## Part II - PREPARING TO REGISTER THE SBP
+## PART II - Preparing to register the SBP
 In this section, you will learn how to register an SBP and lock the required amount of 1,000,000 VITE. This guide is written with the assumption that you are using a VITE Web Wallet and your VITE Mobile app installed on your phone.
 
 ### Step 1
@@ -139,7 +139,7 @@ In this section, you will learn how to register an SBP and lock the required amo
   - The fifth option is the Token Issuance page. This is the page to use for minting a new token on the Vite Network.
   - The sixth option is the Transactions page. All transactions done with your logged-in wallet will appear here.
 
-## PART III - REGISTERING YOUR SBP AND LOCKING THE REQUIRED AMOUNT OF VITE
+## PART III - Registering your SBP and locking the required amount of VITE
 - Go to the SBP page and fill in the following:
 
   - **Node name:** This needs to be the name that you set in `node_config.json`
