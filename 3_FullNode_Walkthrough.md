@@ -160,8 +160,8 @@ pwd
 
 Output should look like this:
 ```
-root@vmi691189:~/$ pwd
-/home/root/
+root@vmi6911:~/vite$ pwd
+/root/vite/
 ```
 
 ## PART V - Making the install Script
@@ -272,19 +272,19 @@ Next up is starting the node as a service this requires a few commands the first
   ```
   ● vite.service - GVite node service
        Loaded: loaded (/etc/systemd/system/vite.service; enabled; vendor preset: enabled)
-       Active: active (running) since Tue 2022-03-01 09:23:39 UTC; 1 months 16 days ago
+       Active: active (running) since Tue 2024-07-27 06:23:39 UTC; 1s ago
      Main PID: 69893 (gvite)
         Tasks: 17 (limit: 4482)
-       Memory: 2.6G
+       Memory: 4.6M
        CGroup: /system.slice/vite.service
                └─69893 /usr/local/vite/gvite -pprof -config /etc/vite/node_config.json
   
-  Mar 01 09:23:39 node01 systemd[1]: Started GVite node service.
+  Jul 27 06:23:39 vmi6911.contaboserver.net systemd[1]: Started GVite node service.
   ```
 
-- After which, it will start syncing the ledger. Pay close attention to this and f it might take a while to finish.
+- Afterward, it will begin syncing the ledger. This process may take some time, so please be patient and monitor it closely..
 
-- On a low-end hardware, this would take a good two to three weeks work to finish. 
+- On modest hardware, this endeavor could span roughly two to three weeks to reach completion. 
 
 
 ## PART VII - Locking VITE for Rewards
