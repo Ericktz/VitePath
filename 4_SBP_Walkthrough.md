@@ -30,20 +30,14 @@ This step-by-step guide assumes that you have installed the Full Node according 
 
 ### Step 1: 
 - Start by logging into the Full Node with SSH. A how-to guide can be found [here](2_Ubuntu_Install.md)
-### Step 2: 
-- The next thing we need to do is to STOP the Full Node. You can do this by typing the command:
-  ```
-  sudo service vite stop
-  ```
-- This command may take some time to complete because it needs to write all open files to the ledger. BE PATIENT.
 
-### Step 3: 
+### Step 2: 
 - Go into the folder where the gvite is located. Run this command to do so:
   ```
   cd ~/vite
   ```
 
-### Step 4: 
+### Step 3: 
 - The next thing we need to do is to create a wallet for the SBP. This will be used as a block creation address.
 - *Remember to replace 123456 with a good/strong password.*
   ```
@@ -67,7 +61,13 @@ This step-by-step guide assumes that you have installed the Full Node according 
   - **mnemonic:** The mnemonic phrase of the wallet that you have just created. Remember to save this!
   - **primaryAddr:** Vite address corresponding to the mnemonic phrase.
   - **filename:** The location of the keystore file.
-
+  - 
+### Step 4: 
+- The next thing we need to do is to STOP the Full Node. You can do this by typing the command:
+  ```
+  sudo service vite stop
+  ```
+- This command may take some time to complete because it needs to write all open files to the ledger. BE PATIENT.
 ### Step 5: 
 - Check if the wallet was created successfully by entering this command:
   ```
@@ -106,7 +106,7 @@ This step-by-step guide assumes that you have installed the Full Node according 
 ### Step 8: 
 - Restart the node by running this command:
   ```
-  sudo service vite start
+  sudo service vite restart
   ```
 
 - After this, you may already close the SSH connection.
