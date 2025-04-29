@@ -27,10 +27,19 @@ To start with, make sure that the computer or a virtual private server (VPS) whi
 - Log into your computer or VPS with SSH (Logging in with SSH is explained [here](2_Ubuntu_Install.md))
 
 ### Step 2: 
-- Download the node software
+- Download the node software (if you know the version, please chage it)
   ```
   curl -L -O  https://github.com/vitelabs/go-vite/releases/download/v2.13.0/gvite-v2.13.0-linux.tar.gz
   ```
+  
+  - (optional) Download the latest node software and check the version:
+  ```
+  curl -s https://api.github.com/repos/vitelabs/go-vite/releases/latest | grep "browser_download_url" | grep "linux.tar.gz" | cut -d '"' -f 4 | xargs curl -L -O
+  ls -lh *.tar.gz
+  root@vmi691108:~# ls -lh *.tar.gz
+    -rw-r--r-- 1 root root  13M Apr 29 00:29 gvite-v2.14.0-linux.tar.gz
+  ```
+
 
 ### Step 3: 
 - Unpack the node software
@@ -41,7 +50,7 @@ To start with, make sure that the computer or a virtual private server (VPS) whi
 ### Step 4: 
 - Move the folder to another directory
   ```
-  mv gvite-v2.13.0-linux vite
+  mv gvite-v2.14.0-linux vite
   ```
 
 ### Step 5: 
