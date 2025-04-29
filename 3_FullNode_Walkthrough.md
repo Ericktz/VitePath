@@ -44,7 +44,7 @@ To start with, make sure that the computer or a virtual private server (VPS) whi
 ### Step 3: 
 - Unpack the node software
   ```
-  tar -xzvf gvite-v2.13.0-linux.tar.gz
+  tar -xzvf gvite-v2.14.0-linux.tar.gz
   ```
 
 ### Step 4: 
